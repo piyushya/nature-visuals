@@ -1,0 +1,205 @@
+/* General Styling */
+
+:root {
+  --page-bg--color: #242424;
+  --bg-color: #333131;
+  --bg-main-color: #292828;
+  --font-color: rgb(222, 201, 201);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: orange;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+/* */
+
+/* Navigation bar styles */
+
+.nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  background: url("./assets/back-tree.jpg");
+  background-size: cover;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  box-shadow: 0rem 0rem 1rem 0.1rem rgb(26, 26, 26);
+}
+
+.nav-bar-logo{
+  width: 3rem;
+  height: auto;
+  animation: rotation 5s infinite linear;
+}
+
+.vite-logo{
+  margin-right: auto;
+  animation: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.nav-bar-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button-link{
+  display: block;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border: 0.2rem solid var(--page-bg--color);
+  border-radius: 1000rem;
+  transition: all 0.2s;
+}
+
+.button-link:hover{
+  background-color: var(--page-bg--color);
+  color: white;
+}
+
+.nav-link{
+  border: 0.2rem solid rgb(255, 196, 196);
+}
+
+/* */
+
+/* common styling */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin: 1rem;
+  background-color: var(--bg-color);
+}
+
+/* */
+
+/* header styling */
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin: 1rem;
+  background-color: var(--page-bg--color);
+  padding-bottom: 0rem;
+}
+
+.heading{
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.account-link:hover{
+  border-bottom: 0.3rem dotted rgb(84, 84, 132);
+}
+
+.page-info{
+  font-size: 1.5rem;
+  max-width: 40rem;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* */
+
+/* main content styling */
+
+.facts-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-box{
+  background-color: var(--bg-main-color);
+  width: 60vw;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 1rem 0.1rem rgb(26, 26, 26);
+  gap: 1rem;
+}
+
+.fact-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30rem;
+  margin-right: auto;
+}
+
+.insta-link{
+  width: fit-content;
+}
+
+.fact-box > img{
+  width: 16rem;
+  max-width: 60vw;
+  max-height: 15rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.fact-box > p{
+  font-size: 1.1rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* */
+
+/* footer styling */
+
+.footer{
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  box-shadow: 0rem 0rem 1rem 0.1rem rgb(26, 26, 26);
+}
+
+/* */
